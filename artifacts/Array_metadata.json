@@ -6,19 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "nuevoNumero",
+						"name": "_number",
 						"type": "uint256"
 					}
 				],
-				"name": "actualizarNumero",
+				"name": "agregar",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -27,24 +22,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
-					}
-				],
-				"name": "multiplicar",
-				"outputs": [
-					{
-						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "numeroAlmacenado",
+				"name": "arr",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -59,16 +41,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "a",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "b",
+						"name": "",
 						"type": "uint256"
 					}
 				],
-				"name": "sumar",
+				"name": "arr1",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -76,7 +53,72 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "borrar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "eliminarInd",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getArray",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tam",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -87,23 +129,13 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"actualizarNumero(uint256)": {
-					"notice": "Función normal (no es ni pure ni view)"
-				},
-				"multiplicar(uint256)": {
-					"notice": "Función VIEW: Lee estado pero no lo modifica"
-				},
-				"sumar(uint256,uint256)": {
-					"notice": "Función PURE: Solo opera con sus parámetros"
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"Interface.sol": "EjemploPureView"
+			"Array.sol": "Array"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -117,12 +149,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Interface.sol": {
-			"keccak256": "0xa3b4a94f825b07ed589b990479495c27d84616fc6aba09c532345c53c34dac28",
+		"Array.sol": {
+			"keccak256": "0x7a6204e7c7efed45eebd9333d4c6b2f906ba31f70dcbd4d62f23b78ec605c9fe",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b328ef2ab5e9e8e72eeecc49a449add8f5bc621c0a986fe9bc10085f6e65aac7",
-				"dweb:/ipfs/QmPTj7isNXTkVCYTiYnncvmWMr2V6LysVzEjEMk88EUnP1"
+				"bzz-raw://578cf747c15d1f2ad67c05d48e8934d54e9852d8d4f5dc216355e71af7b84249",
+				"dweb:/ipfs/QmWAgWDYHCM9s6n55jSdGJt8jqjMj2xcoZvWFnhXMENU6W"
 			]
 		}
 	},

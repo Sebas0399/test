@@ -6,11 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -87,23 +82,13 @@
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"actualizarNumero(uint256)": {
-					"notice": "Función normal (no es ni pure ni view)"
-				},
-				"multiplicar(uint256)": {
-					"notice": "Función VIEW: Lee estado pero no lo modifica"
-				},
-				"sumar(uint256,uint256)": {
-					"notice": "Función PURE: Solo opera con sus parámetros"
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"Interface.sol": "EjemploPureView"
+			"Interface.sol": "IEjemploPureView"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -118,11 +103,11 @@
 	},
 	"sources": {
 		"Interface.sol": {
-			"keccak256": "0xa3b4a94f825b07ed589b990479495c27d84616fc6aba09c532345c53c34dac28",
+			"keccak256": "0x8dd39eb3984d14babda29ff5a2faa97f21763989f4ac16aade619e87bba593e1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b328ef2ab5e9e8e72eeecc49a449add8f5bc621c0a986fe9bc10085f6e65aac7",
-				"dweb:/ipfs/QmPTj7isNXTkVCYTiYnncvmWMr2V6LysVzEjEMk88EUnP1"
+				"bzz-raw://b3c080487f9fa706da44e7d496af9e3e5bbe03e4bd8121106de6d8f1bcfcbf51",
+				"dweb:/ipfs/QmcusQ3rb9iopQ55n3AXxKFdNPVYgZZ7y7HYnrpH9bYyhe"
 			]
 		}
 	},
